@@ -11,11 +11,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://california.vision"
+          href="https://eleusisbook.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Updated from Local Terminal with GitHub!
+          Future Home of the Eleusinia Portal - Click to visit Eleusis Book!
         </a>
       </header>
     </div>
