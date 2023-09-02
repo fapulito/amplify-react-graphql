@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Click for California Vision!
+          Updated from Local Terminal with GitHub!
         </a>
       </header>
     </div>
