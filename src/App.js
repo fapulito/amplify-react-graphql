@@ -1,11 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "@aws-amplify/ui-react/styles.css";
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Image,
+  View,
+  Card,
+} from "@aws-amplify/ui-react";
 
-function App() {
+
+function App({ signOut }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <View className="App">
+      <Card>
+        <Image src={logo} className="App-logo" alt="logo" />
         <p>
           Welcome to Eleusinia.net!
         </p>
@@ -17,9 +26,10 @@ function App() {
         >
           Future Home of the Eleusinia Portal - Click to visit Eleusis Book!
         </a>
-      </header>
-    </div>
+        </Card>
+        <Button onClick={signOut}>Sign Out</Button>
+    </View>  
   );
 }
 
-export default App;
+export default withAuthenticator(App);
